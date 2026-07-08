@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+	<!--
+	X4 UI Rework: Meridian theme
+	https://github.com/St3ve109/X4_ui
+
+	Recolours libraries/colors.xml via the game's native colour mapping
+	system. Only mapping references are changed; base game colour ids are
+	left untouched so other extensions that add their own colours, or that
+	patch different mapping ids, keep working normally alongside this mod.
+	-->
+
+	<!-- Colour mapping overrides -->
+
+	<replace sel="/colormap/mappings/mapping[@id='button_background_default']">
+		<mapping id="button_background_default" ref="x4uir_chrome_darker_alpha_224"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='button_background_inactive']">
+		<mapping id="button_background_inactive" ref="x4uir_panel_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='button_background_solid']">
+		<mapping id="button_background_solid" ref="x4uir_panel_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='button_border_default']">
+		<mapping id="button_border_default" ref="x4uir_accent_dark_moderate_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='button_border_inactive']">
+		<mapping id="button_border_inactive" ref="x4uir_chrome_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='button_highlight_bigbutton']">
+		<mapping id="button_highlight_bigbutton" ref="x4uir_accent_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='button_highlight_default']">
+		<mapping id="button_highlight_default" ref="x4uir_accent_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='button_highlight_inactive']">
+		<mapping id="button_highlight_inactive" ref="x4uir_chrome_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='button_text_inactive']">
+		<mapping id="button_text_inactive" ref="x4uir_textmute_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='checkbox_background']">
+		<mapping id="checkbox_background" ref="x4uir_panel_darker"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='checkbox_background_default']">
+		<mapping id="checkbox_background_default" ref="x4uir_chrome_darker_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='checkbox_background_highlight']">
+		<mapping id="checkbox_background_highlight" ref="x4uir_chrome_darker_alpha_160"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='checkbox_background_inactive']">
+		<mapping id="checkbox_background_inactive" ref="x4uir_panel_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='checkbox_highlight']">
+		<mapping id="checkbox_highlight" ref="x4uir_accent_bright_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='checkbox_symbol_active']">
+		<mapping id="checkbox_symbol_active" ref="x4uir_accent_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='checkbox_symbol_inactive']">
+		<mapping id="checkbox_symbol_inactive" ref="x4uir_textmute_alpha_244"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='container_panel_background']">
+		<mapping id="container_panel_background" ref="x4uir_panel_alpha_224"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='container_panel_header']">
+		<mapping id="container_panel_header" ref="x4uir_panel_darker"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='container_section_background']">
+		<mapping id="container_section_background" ref="x4uir_panel_darker"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='container_section_header']">
+		<mapping id="container_section_header" ref="x4uir_panel_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='container_subsection_header']">
+		<mapping id="container_subsection_header" ref="x4uir_chrome_darker_alpha_64"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='container_subsection_header_inactive']">
+		<mapping id="container_subsection_header_inactive" ref="x4uir_chrome_darker_alpha_160"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_boostbar']">
+		<mapping id="crosshair_boostbar" ref="x4uir_signal_bright_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_boostbar_error']">
+		<mapping id="crosshair_boostbar_error" ref="x4uir_hostile_dark_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_boostbar_full']">
+		<mapping id="crosshair_boostbar_full" ref="x4uir_signal_very_bright"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_boostbar_inactive']">
+		<mapping id="crosshair_boostbar_inactive" ref="x4uir_chrome_darker"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_checkengine_normal']">
+		<mapping id="crosshair_checkengine_normal" ref="x4uir_text_moderate_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_clipreload_autoreloadfailed']">
+		<mapping id="crosshair_clipreload_autoreloadfailed" ref="x4uir_hostile_dark_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_clipreload_autoreloadfailed_inactive']">
+		<mapping id="crosshair_clipreload_autoreloadfailed_inactive" ref="x4uir_hostile_dark_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_clipreload_autoreloadicon']">
+		<mapping id="crosshair_clipreload_autoreloadicon" ref="x4uir_signal_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_clipreload_autoreloading']">
+		<mapping id="crosshair_clipreload_autoreloading" ref="x4uir_signal_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_clipreload_autoreloading_inactive']">
+		<mapping id="crosshair_clipreload_autoreloading_inactive" ref="x4uir_signal_dark_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_clipreload_background']">
+		<mapping id="crosshair_clipreload_background" ref="x4uir_chrome_darker"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_clipreload_highlight']">
+		<mapping id="crosshair_clipreload_highlight" ref="x4uir_signal_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_clipreload_highlight_inactive']">
+		<mapping id="crosshair_clipreload_highlight_inactive" ref="x4uir_chrome_darker"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_clipreload_icon']">
+		<mapping id="crosshair_clipreload_icon" ref="x4uir_accent_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_clipreload_ready']">
+		<mapping id="crosshair_clipreload_ready" ref="x4uir_accent_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_clipreload_ready_inactive']">
+		<mapping id="crosshair_clipreload_ready_inactive" ref="x4uir_chrome_darker"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_clipreload_reloading']">
+		<mapping id="crosshair_clipreload_reloading" ref="x4uir_hostile_dark_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_clipreload_reloading_inactive']">
+		<mapping id="crosshair_clipreload_reloading_inactive" ref="x4uir_hostile_dark_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_countermeasures']">
+		<mapping id="crosshair_countermeasures" ref="x4uir_signal_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_crosshair']">
+		<mapping id="crosshair_crosshair" ref="x4uir_accent_bright_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_drone_armed']">
+		<mapping id="crosshair_drone_armed" ref="x4uir_signal_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_drone_armed_highlight']">
+		<mapping id="crosshair_drone_armed_highlight" ref="x4uir_signal_very_bright_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_drone_mode_active']">
+		<mapping id="crosshair_drone_mode_active" ref="x4uir_signal_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_drone_mode_active_highlight']">
+		<mapping id="crosshair_drone_mode_active_highlight" ref="x4uir_signal_very_bright_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_drone_number']">
+		<mapping id="crosshair_drone_number" ref="x4uir_text_moderate_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_heat_next_shot_normal']">
+		<mapping id="crosshair_heat_next_shot_normal" ref="x4uir_signal_dark_alpha_160"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_heat_next_shot_normal_inactive']">
+		<mapping id="crosshair_heat_next_shot_normal_inactive" ref="x4uir_chrome_dark_alpha_160"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_heat_normal']">
+		<mapping id="crosshair_heat_normal" ref="x4uir_signal_extra_bright_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_heat_normal_inactive']">
+		<mapping id="crosshair_heat_normal_inactive" ref="x4uir_chrome"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_hull']">
+		<mapping id="crosshair_hull" ref="x4uir_text_moderate_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_hull_gradient']">
+		<mapping id="crosshair_hull_gradient" ref="x4uir_chrome_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_hull_gradient_glow']">
+		<mapping id="crosshair_hull_gradient_glow" ref="x4uir_signal_bright"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_indicator_activated']">
+		<mapping id="crosshair_indicator_activated" ref="x4uir_chrome_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_indicator_active']">
+		<mapping id="crosshair_indicator_active" ref="x4uir_accent_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_mission_arrow']">
+		<mapping id="crosshair_mission_arrow" ref="x4uir_mission_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_oxygen']">
+		<mapping id="crosshair_oxygen" ref="x4uir_accent_bright"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_progressbar_grid']">
+		<mapping id="crosshair_progressbar_grid" ref="x4uir_accent_bright"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_progressbar_icon']">
+		<mapping id="crosshair_progressbar_icon" ref="x4uir_text_moderate_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_progressbar_ring']">
+		<mapping id="crosshair_progressbar_ring" ref="x4uir_accent"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_reload_autoreloading']">
+		<mapping id="crosshair_reload_autoreloading" ref="x4uir_signal_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_reload_autoreloading_inactive']">
+		<mapping id="crosshair_reload_autoreloading_inactive" ref="x4uir_chrome_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_seta_active']">
+		<mapping id="crosshair_seta_active" ref="x4uir_chrome_very_bright_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_seta_available']">
+		<mapping id="crosshair_seta_available" ref="x4uir_chrome_bright_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_seta_ring']">
+		<mapping id="crosshair_seta_ring" ref="x4uir_chrome_bright_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_shield']">
+		<mapping id="crosshair_shield" ref="x4uir_accent_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_shield_boost']">
+		<mapping id="crosshair_shield_boost" ref="x4uir_accent_dark_alpha_160_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_shield_damage_animation']">
+		<mapping id="crosshair_shield_damage_animation" ref="x4uir_accent_very_bright_strong_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_shield_gradient_glow']">
+		<mapping id="crosshair_shield_gradient_glow" ref="x4uir_accent_bright"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_speedbar']">
+		<mapping id="crosshair_speedbar" ref="x4uir_text_moderate_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_speedbar_boost']">
+		<mapping id="crosshair_speedbar_boost" ref="x4uir_signal_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_speedbar_maxpoint']">
+		<mapping id="crosshair_speedbar_maxpoint" ref="x4uir_signal_bright"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_target_arrow']">
+		<mapping id="crosshair_target_arrow" ref="x4uir_text_moderate_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_turret_mode']">
+		<mapping id="crosshair_turret_mode" ref="x4uir_accent_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_turret_mode_highlight']">
+		<mapping id="crosshair_turret_mode_highlight" ref="x4uir_accent_very_bright_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_weapon']">
+		<mapping id="crosshair_weapon" ref="x4uir_accent_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_weapon_ammo']">
+		<mapping id="crosshair_weapon_ammo" ref="x4uir_text_moderate_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_weapon_deco']">
+		<mapping id="crosshair_weapon_deco" ref="x4uir_accent_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_weapon_disabled']">
+		<mapping id="crosshair_weapon_disabled" ref="x4uir_chrome_darker_alpha_244"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_weapon_error']">
+		<mapping id="crosshair_weapon_error" ref="x4uir_hostile_dark_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_weapon_group_active']">
+		<mapping id="crosshair_weapon_group_active" ref="x4uir_accent_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='crosshair_weapon_highlight']">
+		<mapping id="crosshair_weapon_highlight" ref="x4uir_accent_bright_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='dialogmenu_center_unselected']">
+		<mapping id="dialogmenu_center_unselected" ref="x4uir_chrome_dark_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='dialogmenu_instant_background']">
+		<mapping id="dialogmenu_instant_background" ref="x4uir_panel_darker_alpha_224"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='dialogmenu_instant_text']">
+		<mapping id="dialogmenu_instant_text" ref="x4uir_signal_bright_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='dialogmenu_normal_background']">
+		<mapping id="dialogmenu_normal_background" ref="x4uir_panel_darker_alpha_224"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='dialogmenu_normal_text']">
+		<mapping id="dialogmenu_normal_text" ref="x4uir_accent_bright_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='dockui_shippos_current_bad']">
+		<mapping id="dockui_shippos_current_bad" ref="x4uir_hostile_bright_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='dropdown_background_default']">
+		<mapping id="dropdown_background_default" ref="x4uir_chrome_darker_alpha_224"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='dropdown_background_inactive']">
+		<mapping id="dropdown_background_inactive" ref="x4uir_chrome_darker"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='dropdown_border_default']">
+		<mapping id="dropdown_border_default" ref="x4uir_accent_dark_moderate_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='dropdown_border_inactive']">
+		<mapping id="dropdown_border_inactive" ref="x4uir_chrome_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='dropdown_highlight_big']">
+		<mapping id="dropdown_highlight_big" ref="x4uir_accent_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='dropdown_highlight_default']">
+		<mapping id="dropdown_highlight_default" ref="x4uir_accent_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='dropdown_highlight_inactive']">
+		<mapping id="dropdown_highlight_inactive" ref="x4uir_chrome_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='dropdown_option_background_inactive']">
+		<mapping id="dropdown_option_background_inactive" ref="x4uir_panel_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='dropdown_option_text_inactive']">
+		<mapping id="dropdown_option_text_inactive" ref="x4uir_textmute"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='dropdown_text_inactive']">
+		<mapping id="dropdown_text_inactive" ref="x4uir_textmute_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='editbox_background_black']">
+		<mapping id="editbox_background_black" ref="x4uir_panel_darker"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='editbox_background_default']">
+		<mapping id="editbox_background_default" ref="x4uir_chrome_darker_alpha_224"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='editbox_border']">
+		<mapping id="editbox_border" ref="x4uir_accent_dark_moderate_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='editbox_inactive']">
+		<mapping id="editbox_inactive" ref="x4uir_textmute_alpha_160"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='editbox_text_default']">
+		<mapping id="editbox_text_default" ref="x4uir_text"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='external_view_mission_arrow']">
+		<mapping id="external_view_mission_arrow" ref="x4uir_mission_dark_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='external_view_target_arrow']">
+		<mapping id="external_view_target_arrow" ref="x4uir_accent_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='faction_loanshark']">
+		<mapping id="faction_loanshark" ref="x4uir_scan_bright_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='faction_ministry']">
+		<mapping id="faction_ministry" ref="x4uir_player_dark_moderate_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='faction_player']">
+		<mapping id="faction_player" ref="x4uir_player_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='faction_teladi']">
+		<mapping id="faction_teladi" ref="x4uir_mission_very_bright_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='firstperson_crosshair_crosshair']">
+		<mapping id="firstperson_crosshair_crosshair" ref="x4uir_accent_bright_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='firstperson_crosshair_text']">
+		<mapping id="firstperson_crosshair_text" ref="x4uir_text_moderate_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='flowchart_border_default']">
+		<mapping id="flowchart_border_default" ref="x4uir_panel_alpha_64_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='flowchart_column_caption_default']">
+		<mapping id="flowchart_column_caption_default" ref="x4uir_text_moderate_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='flowchart_edge_default']">
+		<mapping id="flowchart_edge_default" ref="x4uir_signal"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='flowchart_junction_default']">
+		<mapping id="flowchart_junction_default" ref="x4uir_text"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='flowchart_node_arrow']">
+		<mapping id="flowchart_node_arrow" ref="x4uir_text_moderate_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='flowchart_node_background']">
+		<mapping id="flowchart_node_background" ref="x4uir_panel_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='flowchart_node_default']">
+		<mapping id="flowchart_node_default" ref="x4uir_accent_bright"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='flowchart_slider_diff1']">
+		<mapping id="flowchart_slider_diff1" ref="x4uir_player_darker"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='flowchart_slider_diff2']">
+		<mapping id="flowchart_slider_diff2" ref="x4uir_chrome_darker"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='flowchart_slider_mousedown']">
+		<mapping id="flowchart_slider_mousedown" ref="x4uir_text"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='flowchart_slider_value1']">
+		<mapping id="flowchart_slider_value1" ref="x4uir_accent_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='flowchart_slider_value2']">
+		<mapping id="flowchart_slider_value2" ref="x4uir_signal_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='flowchart_slot_default']">
+		<mapping id="flowchart_slot_default" ref="x4uir_text"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='flowchart_value_default']">
+		<mapping id="flowchart_value_default" ref="x4uir_signal_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='frame_background2_notification']">
+		<mapping id="frame_background2_notification" ref="x4uir_textmute"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='frame_background_notification']">
+		<mapping id="frame_background_notification" ref="x4uir_panel_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='frame_background_semitransparent']">
+		<mapping id="frame_background_semitransparent" ref="x4uir_panel_alpha_224"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='frameborder_pin']">
+		<mapping id="frameborder_pin" ref="x4uir_accent_moderate_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='frameborder_pin_inactive']">
+		<mapping id="frameborder_pin_inactive" ref="x4uir_chrome_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='gravidar_background']">
+		<mapping id="gravidar_background" ref="x4uir_panel_alpha_64"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='helpoverlay_background']">
+		<mapping id="helpoverlay_background" ref="x4uir_panel_darker_alpha_192"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='helpoverlay_border']">
+		<mapping id="helpoverlay_border" ref="x4uir_signal_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='helpoverlay_highlight']">
+		<mapping id="helpoverlay_highlight" ref="x4uir_signal_moderate_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='highlight_environmentobject_outline']">
+		<mapping id="highlight_environmentobject_outline" ref="x4uir_hostile_very_bright_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='highlight_scan_fill_0']">
+		<mapping id="highlight_scan_fill_0" ref="x4uir_hostile_dark_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='highlight_scan_fill_1']">
+		<mapping id="highlight_scan_fill_1" ref="x4uir_hostile_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='highlight_scan_fill_4']">
+		<mapping id="highlight_scan_fill_4" ref="x4uir_hostile_bright_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='highlight_target_outline']">
+		<mapping id="highlight_target_outline" ref="x4uir_hostile_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='hint_background_azure']">
+		<mapping id="hint_background_azure" ref="x4uir_accent_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_attackmarker']">
+		<mapping id="holomap_attackmarker" ref="x4uir_hostile_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_buyoffer']">
+		<mapping id="holomap_buyoffer" ref="x4uir_mission_very_bright_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_collectable']">
+		<mapping id="holomap_collectable" ref="x4uir_accent_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_ecliptic_line']">
+		<mapping id="holomap_ecliptic_line" ref="x4uir_chrome_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_ecliptic_sphere']">
+		<mapping id="holomap_ecliptic_sphere" ref="x4uir_chrome_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_equipment_slot']">
+		<mapping id="holomap_equipment_slot" ref="x4uir_signal_bright"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_hullbar']">
+		<mapping id="holomap_hullbar" ref="x4uir_signal_alpha_96_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_inactivemissiontarget']">
+		<mapping id="holomap_inactivemissiontarget" ref="x4uir_mission_dark_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_infobox_background']">
+		<mapping id="holomap_infobox_background" ref="x4uir_panel_darker_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_infobox_frame']">
+		<mapping id="holomap_infobox_frame" ref="x4uir_chrome_dark_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_infobox_picked']">
+		<mapping id="holomap_infobox_picked" ref="x4uir_accent_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_infobox_selected']">
+		<mapping id="holomap_infobox_selected" ref="x4uir_accent_bright_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_intersector_defence_line']">
+		<mapping id="holomap_intersector_defence_line" ref="x4uir_panel_alpha_64_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_missiontarget']">
+		<mapping id="holomap_missiontarget" ref="x4uir_mission_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_multiverse_player']">
+		<mapping id="holomap_multiverse_player" ref="x4uir_player_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_neutral']">
+		<mapping id="holomap_neutral" ref="x4uir_accent_bright_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_order_active']">
+		<mapping id="holomap_order_active" ref="x4uir_accent_dark_alpha_160"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_order_failed']">
+		<mapping id="holomap_order_failed" ref="x4uir_hostile_alpha_160_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_order_inactive']">
+		<mapping id="holomap_order_inactive" ref="x4uir_chrome_dark_alpha_160"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_order_priority_active']">
+		<mapping id="holomap_order_priority_active" ref="x4uir_signal_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_order_priority_inactive']">
+		<mapping id="holomap_order_priority_inactive" ref="x4uir_signal_darker"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_order_selected_active']">
+		<mapping id="holomap_order_selected_active" ref="x4uir_accent_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_order_selected_inactive']">
+		<mapping id="holomap_order_selected_inactive" ref="x4uir_chrome_dark_alpha_64"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_orderline_active']">
+		<mapping id="holomap_orderline_active" ref="x4uir_accent_dark_alpha_160"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_orderline_inactive']">
+		<mapping id="holomap_orderline_inactive" ref="x4uir_panel_alpha_32"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_orderline_priority_active']">
+		<mapping id="holomap_orderline_priority_active" ref="x4uir_signal_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_orderline_priority_inactive']">
+		<mapping id="holomap_orderline_priority_inactive" ref="x4uir_signal_darker"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_orderline_selected_active']">
+		<mapping id="holomap_orderline_selected_active" ref="x4uir_accent"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_orderline_selected_inactive']">
+		<mapping id="holomap_orderline_selected_inactive" ref="x4uir_chrome_dark_alpha_160"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_oxygenbar']">
+		<mapping id="holomap_oxygenbar" ref="x4uir_accent_very_bright_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_player']">
+		<mapping id="holomap_player" ref="x4uir_player_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_playerlocation_neutral']">
+		<mapping id="holomap_playerlocation_neutral" ref="x4uir_accent_bright_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_playerlocation_playerowned']">
+		<mapping id="holomap_playerlocation_playerowned" ref="x4uir_player_very_bright_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_progressbar']">
+		<mapping id="holomap_progressbar" ref="x4uir_signal_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_radar_axis_labels']">
+		<mapping id="holomap_radar_axis_labels" ref="x4uir_chrome"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_radar_background']">
+		<mapping id="holomap_radar_background" ref="x4uir_chrome_darker"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_radar_ecliptic']">
+		<mapping id="holomap_radar_ecliptic" ref="x4uir_chrome_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_shieldbar']">
+		<mapping id="holomap_shieldbar" ref="x4uir_accent_bright"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_yieldbar']">
+		<mapping id="holomap_yieldbar" ref="x4uir_signal_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='holomap_yieldbar_empty']">
+		<mapping id="holomap_yieldbar_empty" ref="x4uir_chrome_dark_alpha_160"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='icon_inactive']">
+		<mapping id="icon_inactive" ref="x4uir_textmute_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='icon_mission']">
+		<mapping id="icon_mission" ref="x4uir_mission_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='icon_normal']">
+		<mapping id="icon_normal" ref="x4uir_text_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='icon_warning_inactive']">
+		<mapping id="icon_warning_inactive" ref="x4uir_hostile_dark_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='input_reference']">
+		<mapping id="input_reference" ref="x4uir_accent_bright_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='inputbar_background']">
+		<mapping id="inputbar_background" ref="x4uir_panel_darker"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='inputbar_border']">
+		<mapping id="inputbar_border" ref="x4uir_chrome_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='interactmenu_queueorder']">
+		<mapping id="interactmenu_queueorder" ref="x4uir_accent_very_bright_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='loadingscreen_background']">
+		<mapping id="loadingscreen_background" ref="x4uir_panel_darker"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='loadingscreen_bar']">
+		<mapping id="loadingscreen_bar" ref="x4uir_accent_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='loadingscreen_circle']">
+		<mapping id="loadingscreen_circle" ref="x4uir_accent"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='loadingscreen_text']">
+		<mapping id="loadingscreen_text" ref="x4uir_text_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='longrangescan_bad']">
+		<mapping id="longrangescan_bad" ref="x4uir_hostile_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='longrangescan_good']">
+		<mapping id="longrangescan_good" ref="x4uir_accent_bright_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='mapblip_bad']">
+		<mapping id="mapblip_bad" ref="x4uir_hostile_bright"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='mapblip_neutral']">
+		<mapping id="mapblip_neutral" ref="x4uir_accent"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='messageticker_bgmission_text']">
+		<mapping id="messageticker_bgmission_text" ref="x4uir_mission_very_bright"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='messageticker_bgmission_text_highlight']">
+		<mapping id="messageticker_bgmission_text_highlight" ref="x4uir_mission_extra_bright"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='messageticker_curmission_text']">
+		<mapping id="messageticker_curmission_text" ref="x4uir_mission_bright"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='messageticker_curmission_text_highlight']">
+		<mapping id="messageticker_curmission_text_highlight" ref="x4uir_mission_extra_bright"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='messageticker_deco']">
+		<mapping id="messageticker_deco" ref="x4uir_accent_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='messageticker_deco_background']">
+		<mapping id="messageticker_deco_background" ref="x4uir_panel_darker_alpha_160"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='messageticker_mail_icon']">
+		<mapping id="messageticker_mail_icon" ref="x4uir_accent_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='messageticker_mission']">
+		<mapping id="messageticker_mission" ref="x4uir_mission_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='messageticker_mission_highlight']">
+		<mapping id="messageticker_mission_highlight" ref="x4uir_mission_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='messageticker_text']">
+		<mapping id="messageticker_text" ref="x4uir_text_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='messageticker_text_background_default']">
+		<mapping id="messageticker_text_background_default" ref="x4uir_panel_alpha_0"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='order_temp']">
+		<mapping id="order_temp" ref="x4uir_chrome_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='overlay_scenario_stat_text']">
+		<mapping id="overlay_scenario_stat_text" ref="x4uir_accent_bright_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='player_info_background']">
+		<mapping id="player_info_background" ref="x4uir_panel_dark_alpha_160_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='playeractivity_longrangescan']">
+		<mapping id="playeractivity_longrangescan" ref="x4uir_accent_very_bright_strong_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='playeractivity_longrangescan_background']">
+		<mapping id="playeractivity_longrangescan_background" ref="x4uir_panel_alpha_64_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='playeractivity_scan']">
+		<mapping id="playeractivity_scan" ref="x4uir_scan_bright_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='playeractivity_scan_background']">
+		<mapping id="playeractivity_scan_background" ref="x4uir_panel_alpha_64_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='playeractivity_seta']">
+		<mapping id="playeractivity_seta" ref="x4uir_chrome_dark_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='playeractivity_seta_background']">
+		<mapping id="playeractivity_seta_background" ref="x4uir_panel_alpha_64_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='playeractivity_travel']">
+		<mapping id="playeractivity_travel" ref="x4uir_signal_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='playeractivity_travel_background']">
+		<mapping id="playeractivity_travel_background" ref="x4uir_panel_alpha_64_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='promo_background']">
+		<mapping id="promo_background" ref="x4uir_textmute_moderate_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='promo_button_highlight']">
+		<mapping id="promo_button_highlight" ref="x4uir_accent_moderate_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='promo_button_normal']">
+		<mapping id="promo_button_normal" ref="x4uir_chrome_darker_alpha_224"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='promo_text_background']">
+		<mapping id="promo_text_background" ref="x4uir_panel_darker"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='promo_text_highlight']">
+		<mapping id="promo_text_highlight" ref="x4uir_accent_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='promo_white_line']">
+		<mapping id="promo_white_line" ref="x4uir_text_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='resource_map_ice']">
+		<mapping id="resource_map_ice" ref="x4uir_accent_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='resource_map_khaakscrap']">
+		<mapping id="resource_map_khaakscrap" ref="x4uir_chrome_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='resource_map_scrap']">
+		<mapping id="resource_map_scrap" ref="x4uir_chrome_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='resource_map_silicon']">
+		<mapping id="resource_map_silicon" ref="x4uir_signal_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='row_background_blue']">
+		<mapping id="row_background_blue" ref="x4uir_chrome_darker_alpha_224"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='row_background_blue_opaque']">
+		<mapping id="row_background_blue_opaque" ref="x4uir_chrome_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='row_background_selected']">
+		<mapping id="row_background_selected" ref="x4uir_textmute_alpha_160_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='row_background_unselectable']">
+		<mapping id="row_background_unselectable" ref="x4uir_panel_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='row_separator']">
+		<mapping id="row_separator" ref="x4uir_chrome_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='row_separator_encyclopedia']">
+		<mapping id="row_separator_encyclopedia" ref="x4uir_chrome_darker"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='row_title']">
+		<mapping id="row_title" ref="x4uir_chrome_dark_alpha_160"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='row_title_background']">
+		<mapping id="row_title_background" ref="x4uir_chrome_darker_alpha_224"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='scrollbar_background']">
+		<mapping id="scrollbar_background" ref="x4uir_panel_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='scrollbar_slider_click']">
+		<mapping id="scrollbar_slider_click" ref="x4uir_chrome_darker"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='scrollbar_slider_highlight']">
+		<mapping id="scrollbar_slider_highlight" ref="x4uir_accent_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='scrollbar_slider_inactive']">
+		<mapping id="scrollbar_slider_inactive" ref="x4uir_chrome_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='scrollbar_slider_normal']">
+		<mapping id="scrollbar_slider_normal" ref="x4uir_accent_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='shieldhullbar_hull']">
+		<mapping id="shieldhullbar_hull" ref="x4uir_signal_alpha_96_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='shieldhullbar_shield']">
+		<mapping id="shieldhullbar_shield" ref="x4uir_accent_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='si_prefix']">
+		<mapping id="si_prefix" ref="x4uir_signal_bright_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='signalleak_background']">
+		<mapping id="signalleak_background" ref="x4uir_signal_darker"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='signalleak_base']">
+		<mapping id="signalleak_base" ref="x4uir_signal_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='signalleak_scanmode']">
+		<mapping id="signalleak_scanmode" ref="x4uir_accent_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='slider_arrow_click']">
+		<mapping id="slider_arrow_click" ref="x4uir_chrome_darker"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='slider_arrow_disabled']">
+		<mapping id="slider_arrow_disabled" ref="x4uir_chrome_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='slider_background_default']">
+		<mapping id="slider_background_default" ref="x4uir_panel_dark_alpha_160"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='slider_background_inactive']">
+		<mapping id="slider_background_inactive" ref="x4uir_panel_dark_alpha_160"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='slider_border_default']">
+		<mapping id="slider_border_default" ref="x4uir_accent_dark_moderate_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='slider_value']">
+		<mapping id="slider_value" ref="x4uir_chrome_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='slider_value_inactive']">
+		<mapping id="slider_value_inactive" ref="x4uir_chrome_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='slider_value_inactive_dark']">
+		<mapping id="slider_value_inactive_dark" ref="x4uir_chrome_darker"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='statusbar_diff_neg']">
+		<mapping id="statusbar_diff_neg" ref="x4uir_hostile_alpha_160"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='statusbar_diff_pos']">
+		<mapping id="statusbar_diff_pos" ref="x4uir_player_alpha_160"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='statusbar_marker_default']">
+		<mapping id="statusbar_marker_default" ref="x4uir_accent_very_bright"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='statusbar_marker_hidden']">
+		<mapping id="statusbar_marker_hidden" ref="x4uir_panel_alpha_64_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='statusbar_value_default']">
+		<mapping id="statusbar_value_default" ref="x4uir_accent"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='statusbar_value_white']">
+		<mapping id="statusbar_value_white" ref="x4uir_text_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='table_row_highlight']">
+		<mapping id="table_row_highlight" ref="x4uir_textmute_moderate_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='table_row_highlight_grey']">
+		<mapping id="table_row_highlight_grey" ref="x4uir_chrome_dark_alpha_192"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='table_row_multiselect']">
+		<mapping id="table_row_multiselect" ref="x4uir_chrome_dark_alpha_244"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='targetmonitor_deco']">
+		<mapping id="targetmonitor_deco" ref="x4uir_accent_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='targetmonitor_deco_background']">
+		<mapping id="targetmonitor_deco_background" ref="x4uir_panel_darker_alpha_160"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='targetmonitor_notoriety_friendly_1']">
+		<mapping id="targetmonitor_notoriety_friendly_1" ref="x4uir_player_dark_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='targetmonitor_notoriety_friendly_2']">
+		<mapping id="targetmonitor_notoriety_friendly_2" ref="x4uir_player_dark_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='targetmonitor_notoriety_friendly_3']">
+		<mapping id="targetmonitor_notoriety_friendly_3" ref="x4uir_player_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='targetmonitor_notoriety_friendly_4']">
+		<mapping id="targetmonitor_notoriety_friendly_4" ref="x4uir_player_bright_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='targetmonitor_notoriety_player_1']">
+		<mapping id="targetmonitor_notoriety_player_1" ref="x4uir_player_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='targetmonitor_text']">
+		<mapping id="targetmonitor_text" ref="x4uir_text_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='targetmonitor_text_background_default']">
+		<mapping id="targetmonitor_text_background_default" ref="x4uir_panel_alpha_0"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='targetmonitor_text_background_overlay']">
+		<mapping id="targetmonitor_text_background_overlay" ref="x4uir_panel_darker_alpha_64"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='targetsystem_aimahead']">
+		<mapping id="targetsystem_aimahead" ref="x4uir_accent_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='targetsystem_collectible']">
+		<mapping id="targetsystem_collectible" ref="x4uir_accent_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='targetsystem_missile_hostile_locking']">
+		<mapping id="targetsystem_missile_hostile_locking" ref="x4uir_hostile_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='targetsystem_mission']">
+		<mapping id="targetsystem_mission" ref="x4uir_mission"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='targetsystem_mission_obstructed']">
+		<mapping id="targetsystem_mission_obstructed" ref="x4uir_mission_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='targetsystem_relation_neutral']">
+		<mapping id="targetsystem_relation_neutral" ref="x4uir_accent_bright_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='targetsystem_relation_neutral_obstructed']">
+		<mapping id="targetsystem_relation_neutral_obstructed" ref="x4uir_accent_dark_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='targetsystem_relation_neutral_text']">
+		<mapping id="targetsystem_relation_neutral_text" ref="x4uir_accent_bright_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='targetsystem_relation_neutral_text_obstructed']">
+		<mapping id="targetsystem_relation_neutral_text_obstructed" ref="x4uir_accent_bright_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='targetsystem_relation_player']">
+		<mapping id="targetsystem_relation_player" ref="x4uir_player_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='targetsystem_relation_player_obstructed']">
+		<mapping id="targetsystem_relation_player_obstructed" ref="x4uir_player_dark_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='targetsystem_relation_player_text']">
+		<mapping id="targetsystem_relation_player_text" ref="x4uir_player_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='targetsystem_relation_player_text_obstructed']">
+		<mapping id="targetsystem_relation_player_text_obstructed" ref="x4uir_player_dark_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='targetsystem_shield']">
+		<mapping id="targetsystem_shield" ref="x4uir_accent_bright"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='targetsystem_shield_obstructed']">
+		<mapping id="targetsystem_shield_obstructed" ref="x4uir_accent_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='targetsystem_velocity_indicator']">
+		<mapping id="targetsystem_velocity_indicator" ref="x4uir_signal_dark_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='targetsystem_velocity_indicator_offscreen']">
+		<mapping id="targetsystem_velocity_indicator_offscreen" ref="x4uir_signal_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='text_ally']">
+		<mapping id="text_ally" ref="x4uir_player_bright_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='text_friend']">
+		<mapping id="text_friend" ref="x4uir_player_bright_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='text_inactive']">
+		<mapping id="text_inactive" ref="x4uir_textmute_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='text_input_device_keyboard']">
+		<mapping id="text_input_device_keyboard" ref="x4uir_signal_bright"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='text_lowlight']">
+		<mapping id="text_lowlight" ref="x4uir_textmute"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='text_member']">
+		<mapping id="text_member" ref="x4uir_player_bright_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='text_mission']">
+		<mapping id="text_mission" ref="x4uir_mission_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='text_mission_inactive']">
+		<mapping id="text_mission_inactive" ref="x4uir_mission_dark"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='text_normal']">
+		<mapping id="text_normal" ref="x4uir_text_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='text_notification_header']">
+		<mapping id="text_notification_header" ref="x4uir_accent_bright_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='text_notification_text']">
+		<mapping id="text_notification_text" ref="x4uir_text_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='text_notification_text_lowlight']">
+		<mapping id="text_notification_text_lowlight" ref="x4uir_textmute_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='text_player']">
+		<mapping id="text_player" ref="x4uir_player_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='text_player_current']">
+		<mapping id="text_player_current" ref="x4uir_player_bright_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='text_player_inactive']">
+		<mapping id="text_player_inactive" ref="x4uir_player_dark_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='text_player_lowlight']">
+		<mapping id="text_player_lowlight" ref="x4uir_player_dark_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='text_relation_neutral']">
+		<mapping id="text_relation_neutral" ref="x4uir_accent_bright_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='toplevel_arrow']">
+		<mapping id="toplevel_arrow" ref="x4uir_accent_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='toplevel_arrow_inactive']">
+		<mapping id="toplevel_arrow_inactive" ref="x4uir_chrome_dark_alpha_160"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='weapon_group_highlight']">
+		<mapping id="weapon_group_highlight" ref="x4uir_accent_dark_alpha_224"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='weaponpointer_inrange']">
+		<mapping id="weaponpointer_inrange" ref="x4uir_signal_weak_glow"/>
+	</replace>
+	<replace sel="/colormap/mappings/mapping[@id='weaponpointer_outofrange']">
+		<mapping id="weaponpointer_outofrange" ref="x4uir_chrome_dark_weak_glow"/>
+	</replace>
+
+	<!-- Meridian theme colour palette -->
+
+	<add sel="/colormap/colors">
+		<color id="x4uir_player_weak_glow" r="94" g="214" b="132" a="255" glow="0.05"/>
+		<color id="x4uir_player_glow" r="94" g="214" b="132" a="255" glow="0.4"/>
+		<color id="x4uir_player_very_bright_weak_glow" r="183" g="237" b="200" a="255" glow="0.05"/>
+		<color id="x4uir_player_dark_glow" r="52" g="118" b="73" a="255" glow="0.4"/>
+		<color id="x4uir_player_bright_weak_glow" r="142" g="226" b="169" a="255" glow="0.05"/>
+		<color id="x4uir_player_dark_weak_glow" r="52" g="118" b="73" a="255" glow="0.05"/>
+		<color id="x4uir_panel_dark_alpha_160_weak_glow" r="6" g="8" b="9" a="160" glow="0.05"/>
+		<color id="x4uir_accent_bright_glow" r="107" g="223" b="214" a="255" glow="0.4"/>
+		<color id="x4uir_accent_dark_weak_glow" r="24" g="115" b="108" a="255" glow="0.05"/>
+		<color id="x4uir_accent_bright_weak_glow" r="107" g="223" b="214" a="255" glow="0.05"/>
+		<color id="x4uir_accent" r="43" g="209" b="197" a="255"/>
+		<color id="x4uir_hostile_bright" r="226" g="117" b="117" a="255"/>
+		<color id="x4uir_panel_darker_alpha_224" r="3" g="4" b="5" a="224"/>
+		<color id="x4uir_signal_bright_glow" r="233" g="194" b="120" a="255" glow="0.4"/>
+		<color id="x4uir_chrome_dark_weak_glow" r="48" g="56" b="59" a="255" glow="0.05"/>
+		<color id="x4uir_text_moderate_glow" r="222" g="228" b="230" a="255" glow="0.2"/>
+		<color id="x4uir_player_bright_glow" r="142" g="226" b="169" a="255" glow="0.4"/>
+		<color id="x4uir_accent_weak_glow" r="43" g="209" b="197" a="255" glow="0.05"/>
+		<color id="x4uir_accent_bright" r="107" g="223" b="214" a="255"/>
+		<color id="x4uir_accent_dark" r="24" g="115" b="108" a="255"/>
+		<color id="x4uir_hostile_weak_glow" r="214" g="58" b="58" a="255" glow="0.05"/>
+		<color id="x4uir_signal_dark_weak_glow" r="123" g="92" b="34" a="255" glow="0.05"/>
+		<color id="x4uir_signal_glow" r="224" g="168" b="62" a="255" glow="0.4"/>
+		<color id="x4uir_accent_glow" r="43" g="209" b="197" a="255" glow="0.4"/>
+		<color id="x4uir_mission_dark_glow" r="140" g="118" b="35" a="255" glow="0.4"/>
+		<color id="x4uir_panel_alpha_64" r="11" g="14" b="16" a="64"/>
+		<color id="x4uir_signal_bright" r="233" g="194" b="120" a="255"/>
+		<color id="x4uir_signal_weak_glow" r="224" g="168" b="62" a="255" glow="0.05"/>
+		<color id="x4uir_chrome_dark_alpha_160" r="48" g="56" b="59" a="160"/>
+		<color id="x4uir_signal_alpha_96_glow" r="224" g="168" b="62" a="96" glow="0.4"/>
+		<color id="x4uir_accent_very_bright_weak_glow" r="160" g="234" b="229" a="255" glow="0.05"/>
+		<color id="x4uir_signal_dark" r="123" g="92" b="34" a="255"/>
+		<color id="x4uir_mission_very_bright_weak_glow" r="255" g="237" b="169" a="255" glow="0.05"/>
+		<color id="x4uir_chrome_darker" r="26" g="30" b="32" a="255"/>
+		<color id="x4uir_chrome_dark" r="48" g="56" b="59" a="255"/>
+		<color id="x4uir_chrome" r="88" g="101" b="108" a="255"/>
+		<color id="x4uir_accent_dark_alpha_160" r="24" g="115" b="108" a="160"/>
+		<color id="x4uir_chrome_dark_alpha_64" r="48" g="56" b="59" a="64"/>
+		<color id="x4uir_panel_alpha_32" r="11" g="14" b="16" a="32"/>
+		<color id="x4uir_signal_darker" r="67" g="50" b="19" a="255"/>
+		<color id="x4uir_hostile_alpha_160_glow" r="214" g="58" b="58" a="160" glow="0.4"/>
+		<color id="x4uir_panel_alpha_64_weak_glow" r="11" g="14" b="16" a="64" glow="0.05"/>
+		<color id="x4uir_panel_darker_weak_glow" r="3" g="4" b="5" a="255" glow="0.05"/>
+		<color id="x4uir_mission_glow" r="255" g="214" b="64" a="255" glow="0.4"/>
+		<color id="x4uir_accent_very_bright_strong_glow" r="160" g="234" b="229" a="255" glow="0.6"/>
+		<color id="x4uir_accent_dark_alpha_160_glow" r="24" g="115" b="108" a="160" glow="0.4"/>
+		<color id="x4uir_signal_very_bright" r="241" g="216" b="168" a="255"/>
+		<color id="x4uir_hostile_dark_glow" r="118" g="32" b="32" a="255" glow="0.4"/>
+		<color id="x4uir_chrome_darker_alpha_244" r="26" g="30" b="32" a="244"/>
+		<color id="x4uir_signal_extra_bright_glow" r="247" g="233" b="207" a="255" glow="0.4"/>
+		<color id="x4uir_signal_dark_alpha_160" r="123" g="92" b="34" a="160"/>
+		<color id="x4uir_accent_very_bright_glow" r="160" g="234" b="229" a="255" glow="0.4"/>
+		<color id="x4uir_signal_very_bright_glow" r="241" g="216" b="168" a="255" glow="0.4"/>
+		<color id="x4uir_chrome_bright_glow" r="138" g="147" b="152" a="255" glow="0.4"/>
+		<color id="x4uir_chrome_very_bright_glow" r="180" g="186" b="189" a="255" glow="0.4"/>
+		<color id="x4uir_accent_dark_alpha_224" r="24" g="115" b="108" a="224"/>
+		<color id="x4uir_text_weak_glow" r="222" g="228" b="230" a="255" glow="0.05"/>
+		<color id="x4uir_panel_alpha_0" r="11" g="14" b="16" a="0"/>
+		<color id="x4uir_panel_darker_alpha_160" r="3" g="4" b="5" a="160"/>
+		<color id="x4uir_textmute_weak_glow" r="138" g="148" b="156" a="255" glow="0.05"/>
+		<color id="x4uir_mission" r="255" g="214" b="64" a="255"/>
+		<color id="x4uir_mission_dark" r="140" g="118" b="35" a="255"/>
+		<color id="x4uir_mission_bright" r="255" g="226" b="121" a="255"/>
+		<color id="x4uir_mission_extra_bright" r="255" g="245" b="207" a="255"/>
+		<color id="x4uir_mission_very_bright" r="255" g="237" b="169" a="255"/>
+		<color id="x4uir_panel_darker_alpha_64" r="3" g="4" b="5" a="64"/>
+		<color id="x4uir_player_alpha_160" r="94" g="214" b="132" a="160"/>
+		<color id="x4uir_hostile_alpha_160" r="214" g="58" b="58" a="160"/>
+		<color id="x4uir_accent_very_bright" r="160" g="234" b="229" a="255"/>
+		<color id="x4uir_scan_bright_glow" r="214" g="141" b="233" a="255" glow="0.4"/>
+		<color id="x4uir_chrome_dark_glow" r="48" g="56" b="59" a="255" glow="0.4"/>
+		<color id="x4uir_hostile_glow" r="214" g="58" b="58" a="255" glow="0.4"/>
+		<color id="x4uir_hostile_very_bright_glow" r="237" g="166" b="166" a="255" glow="0.4"/>
+		<color id="x4uir_hostile_bright_glow" r="226" g="117" b="117" a="255" glow="0.4"/>
+		<color id="x4uir_panel_darker" r="3" g="4" b="5" a="255"/>
+		<color id="x4uir_panel_dark" r="6" g="8" b="9" a="255"/>
+		<color id="x4uir_player_darker" r="28" g="64" b="40" a="255"/>
+		<color id="x4uir_text" r="222" g="228" b="230" a="255"/>
+		<color id="x4uir_signal" r="224" g="168" b="62" a="255"/>
+		<color id="x4uir_textmute_dark" r="76" g="81" b="86" a="255"/>
+		<color id="x4uir_textmute" r="138" g="148" b="156" a="255"/>
+		<color id="x4uir_hostile_dark_weak_glow" r="118" g="32" b="32" a="255" glow="0.05"/>
+		<color id="x4uir_chrome_darker_alpha_224" r="26" g="30" b="32" a="224"/>
+		<color id="x4uir_accent_dark_moderate_glow" r="24" g="115" b="108" a="255" glow="0.2"/>
+		<color id="x4uir_panel_alpha_224" r="11" g="14" b="16" a="224"/>
+		<color id="x4uir_accent_moderate_glow" r="43" g="209" b="197" a="255" glow="0.2"/>
+		<color id="x4uir_chrome_darker_alpha_64" r="26" g="30" b="32" a="64"/>
+		<color id="x4uir_chrome_darker_alpha_160" r="26" g="30" b="32" a="160"/>
+		<color id="x4uir_chrome_dark_alpha_244" r="48" g="56" b="59" a="244"/>
+		<color id="x4uir_textmute_moderate_glow" r="138" g="148" b="156" a="255" glow="0.2"/>
+		<color id="x4uir_chrome_dark_alpha_192" r="48" g="56" b="59" a="192"/>
+		<color id="x4uir_textmute_alpha_160_weak_glow" r="138" g="148" b="156" a="160" glow="0.05"/>
+		<color id="x4uir_textmute_alpha_160" r="138" g="148" b="156" a="160"/>
+		<color id="x4uir_panel_dark_alpha_160" r="6" g="8" b="9" a="160"/>
+		<color id="x4uir_chrome_darker_glow" r="26" g="30" b="32" a="255" glow="0.4"/>
+		<color id="x4uir_textmute_alpha_244" r="138" g="148" b="156" a="244"/>
+		<color id="x4uir_signal_moderate_glow" r="224" g="168" b="62" a="255" glow="0.2"/>
+		<color id="x4uir_panel_darker_alpha_192" r="3" g="4" b="5" a="192"/>
+		<color id="x4uir_scan_bright_weak_glow" r="214" g="141" b="233" a="255" glow="0.05"/>
+		<color id="x4uir_player_dark_moderate_glow" r="52" g="118" b="73" a="255" glow="0.2"/>
+	</add>
+</diff>

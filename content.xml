@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content id="x4_ui_rework_meridian"
+         name="X4 UI Rework - Meridian Theme"
+         description="An EVE Online-inspired full-UI recolour and readability overhaul."
+         author="St3ve109"
+         version="100"
+         date="2026-07-08"
+         save="false"
+         enabled="true">
+
+	<text language=""
+	      name="X4 UI Rework - Meridian Theme"
+	      description="An EVE Online-inspired recolour and readability overhaul of the entire X4 Foundations UI and HUD: menus, panels, buttons, crosshair, holomap, target monitor, message ticker and more. Non-destructive colour patch only, safe alongside almost any other extension. Complements kuertee's UI Extensions and HUD."
+	      author="St3ve109"/>
+
+	<text language="44"
+	      name="X4 UI Rework - Meridian Theme"
+	      description="An EVE Online-inspired recolour and readability overhaul of the entire X4 Foundations UI and HUD: menus, panels, buttons, crosshair, holomap, target monitor, message ticker and more. Non-destructive colour patch only, safe alongside almost any other extension. Complements kuertee's UI Extensions and HUD."
+	      author="St3ve109"/>
+
+	<!-- Soft/optional dependency: not required, but load after it if present so its own
+	     UI additions (which this mod does not touch) pick up the Meridian colour scheme too. -->
+	<dependency id="kuerteeUIExtensionsAndHUD" name="kuertee UI Extensions and HUD" optional="true"/>
+
+</content>
