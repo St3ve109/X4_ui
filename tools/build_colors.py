@@ -1,18 +1,22 @@
 # Build script: generates libraries/colors.xml diff patch content.
 # Not shipped in the mod -- dev tool only.
 
+# Palette tuned toward EVE Online's tactical-HUD look: near-black neutral
+# slate panels, a teal-cyan accent (rather than sky-blue), and a gold/amber
+# secondary (rather than orange) for ISK-style highlights and hull/active
+# state indicators.
 FAMILIES = {
     # name: base RGB
-    "panel":    (16, 19, 23),
-    "chrome":   (98, 112, 128),
-    "accent":   (56, 189, 248),
-    "signal":   (255, 158, 64),
-    "player":   (86, 222, 138),
-    "hostile":  (255, 82, 82),
-    "mission":  (255, 205, 70),
-    "scan":     (255, 72, 176),
-    "text":     (238, 236, 228),
-    "textmute": (150, 158, 168),
+    "panel":    (11, 14, 16),      # near-black neutral slate
+    "chrome":   (88, 101, 108),    # cool blue-grey borders/dividers
+    "accent":   (43, 209, 197),    # EVE-style teal-cyan
+    "signal":   (224, 168, 62),    # gold/amber secondary (ISK-style)
+    "player":   (94, 214, 132),    # friendly/positive green
+    "hostile":  (214, 58, 58),     # hostile/danger red
+    "mission":  (255, 214, 64),    # pure gold-yellow, distinct from signal
+    "scan":     (196, 92, 224),    # violet-magenta scan/alarm accent
+    "text":     (222, 228, 230),   # cool neutral off-white
+    "textmute": (138, 148, 156),   # cool muted grey
 }
 
 GLOW_LEVELS = {

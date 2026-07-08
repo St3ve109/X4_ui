@@ -958,104 +958,104 @@
 	<!-- Meridian theme colour palette -->
 
 	<add sel="/colormap/colors">
-		<color id="x4uir_player_weak_glow" r="86" g="222" b="138" a="255" glow="0.05"/>
-		<color id="x4uir_player_glow" r="86" g="222" b="138" a="255" glow="0.4"/>
-		<color id="x4uir_player_very_bright_weak_glow" r="179" g="240" b="202" a="255" glow="0.05"/>
-		<color id="x4uir_player_dark_glow" r="47" g="122" b="76" a="255" glow="0.4"/>
-		<color id="x4uir_player_bright_weak_glow" r="137" g="232" b="173" a="255" glow="0.05"/>
-		<color id="x4uir_player_dark_weak_glow" r="47" g="122" b="76" a="255" glow="0.05"/>
-		<color id="x4uir_panel_dark_alpha_160_weak_glow" r="9" g="10" b="13" a="160" glow="0.05"/>
-		<color id="x4uir_accent_bright_glow" r="116" g="209" b="250" a="255" glow="0.4"/>
-		<color id="x4uir_accent_dark_weak_glow" r="31" g="104" b="136" a="255" glow="0.05"/>
-		<color id="x4uir_accent_bright_weak_glow" r="116" g="209" b="250" a="255" glow="0.05"/>
-		<color id="x4uir_accent" r="56" g="189" b="248" a="255"/>
-		<color id="x4uir_hostile_bright" r="255" g="134" b="134" a="255"/>
-		<color id="x4uir_panel_darker_alpha_224" r="5" g="6" b="7" a="224"/>
-		<color id="x4uir_signal_bright_glow" r="255" g="187" b="121" a="255" glow="0.4"/>
-		<color id="x4uir_chrome_dark_weak_glow" r="54" g="62" b="70" a="255" glow="0.05"/>
-		<color id="x4uir_text_moderate_glow" r="238" g="236" b="228" a="255" glow="0.2"/>
-		<color id="x4uir_player_bright_glow" r="137" g="232" b="173" a="255" glow="0.4"/>
-		<color id="x4uir_accent_weak_glow" r="56" g="189" b="248" a="255" glow="0.05"/>
-		<color id="x4uir_accent_bright" r="116" g="209" b="250" a="255"/>
-		<color id="x4uir_accent_dark" r="31" g="104" b="136" a="255"/>
-		<color id="x4uir_hostile_weak_glow" r="255" g="82" b="82" a="255" glow="0.05"/>
-		<color id="x4uir_signal_dark_weak_glow" r="140" g="87" b="35" a="255" glow="0.05"/>
-		<color id="x4uir_signal_glow" r="255" g="158" b="64" a="255" glow="0.4"/>
-		<color id="x4uir_accent_glow" r="56" g="189" b="248" a="255" glow="0.4"/>
-		<color id="x4uir_mission_dark_glow" r="140" g="113" b="38" a="255" glow="0.4"/>
-		<color id="x4uir_panel_alpha_64" r="16" g="19" b="23" a="64"/>
-		<color id="x4uir_signal_bright" r="255" g="187" b="121" a="255"/>
-		<color id="x4uir_signal_weak_glow" r="255" g="158" b="64" a="255" glow="0.05"/>
-		<color id="x4uir_chrome_dark_alpha_160" r="54" g="62" b="70" a="160"/>
-		<color id="x4uir_signal_alpha_96_glow" r="255" g="158" b="64" a="96" glow="0.4"/>
-		<color id="x4uir_accent_very_bright_weak_glow" r="165" g="225" b="252" a="255" glow="0.05"/>
-		<color id="x4uir_signal_dark" r="140" g="87" b="35" a="255"/>
-		<color id="x4uir_mission_very_bright_weak_glow" r="255" g="232" b="172" a="255" glow="0.05"/>
-		<color id="x4uir_chrome_darker" r="29" g="34" b="38" a="255"/>
-		<color id="x4uir_chrome_dark" r="54" g="62" b="70" a="255"/>
-		<color id="x4uir_chrome" r="98" g="112" b="128" a="255"/>
-		<color id="x4uir_accent_dark_alpha_160" r="31" g="104" b="136" a="160"/>
-		<color id="x4uir_chrome_dark_alpha_64" r="54" g="62" b="70" a="64"/>
-		<color id="x4uir_panel_alpha_32" r="16" g="19" b="23" a="32"/>
-		<color id="x4uir_signal_darker" r="76" g="47" b="19" a="255"/>
-		<color id="x4uir_hostile_alpha_160_glow" r="255" g="82" b="82" a="160" glow="0.4"/>
-		<color id="x4uir_panel_alpha_64_weak_glow" r="16" g="19" b="23" a="64" glow="0.05"/>
-		<color id="x4uir_panel_darker_weak_glow" r="5" g="6" b="7" a="255" glow="0.05"/>
-		<color id="x4uir_mission_glow" r="255" g="205" b="70" a="255" glow="0.4"/>
-		<color id="x4uir_accent_very_bright_strong_glow" r="165" g="225" b="252" a="255" glow="0.6"/>
-		<color id="x4uir_accent_dark_alpha_160_glow" r="31" g="104" b="136" a="160" glow="0.4"/>
-		<color id="x4uir_signal_very_bright" r="255" g="211" b="169" a="255"/>
-		<color id="x4uir_hostile_dark_glow" r="140" g="45" b="45" a="255" glow="0.4"/>
-		<color id="x4uir_chrome_darker_alpha_244" r="29" g="34" b="38" a="244"/>
-		<color id="x4uir_signal_extra_bright_glow" r="255" g="231" b="207" a="255" glow="0.4"/>
-		<color id="x4uir_signal_dark_alpha_160" r="140" g="87" b="35" a="160"/>
-		<color id="x4uir_accent_very_bright_glow" r="165" g="225" b="252" a="255" glow="0.4"/>
-		<color id="x4uir_signal_very_bright_glow" r="255" g="211" b="169" a="255" glow="0.4"/>
-		<color id="x4uir_chrome_bright_glow" r="145" g="155" b="166" a="255" glow="0.4"/>
-		<color id="x4uir_chrome_very_bright_glow" r="184" g="191" b="198" a="255" glow="0.4"/>
-		<color id="x4uir_accent_dark_alpha_224" r="31" g="104" b="136" a="224"/>
-		<color id="x4uir_text_weak_glow" r="238" g="236" b="228" a="255" glow="0.05"/>
-		<color id="x4uir_panel_alpha_0" r="16" g="19" b="23" a="0"/>
-		<color id="x4uir_panel_darker_alpha_160" r="5" g="6" b="7" a="160"/>
-		<color id="x4uir_textmute_weak_glow" r="150" g="158" b="168" a="255" glow="0.05"/>
-		<color id="x4uir_mission" r="255" g="205" b="70" a="255"/>
-		<color id="x4uir_mission_dark" r="140" g="113" b="38" a="255"/>
-		<color id="x4uir_mission_bright" r="255" g="220" b="126" a="255"/>
-		<color id="x4uir_mission_extra_bright" r="255" g="242" b="209" a="255"/>
-		<color id="x4uir_mission_very_bright" r="255" g="232" b="172" a="255"/>
-		<color id="x4uir_panel_darker_alpha_64" r="5" g="6" b="7" a="64"/>
-		<color id="x4uir_player_alpha_160" r="86" g="222" b="138" a="160"/>
-		<color id="x4uir_hostile_alpha_160" r="255" g="82" b="82" a="160"/>
-		<color id="x4uir_accent_very_bright" r="165" g="225" b="252" a="255"/>
-		<color id="x4uir_scan_bright_glow" r="255" g="127" b="200" a="255" glow="0.4"/>
-		<color id="x4uir_chrome_dark_glow" r="54" g="62" b="70" a="255" glow="0.4"/>
-		<color id="x4uir_hostile_glow" r="255" g="82" b="82" a="255" glow="0.4"/>
-		<color id="x4uir_hostile_very_bright_glow" r="255" g="177" b="177" a="255" glow="0.4"/>
-		<color id="x4uir_hostile_bright_glow" r="255" g="134" b="134" a="255" glow="0.4"/>
-		<color id="x4uir_panel_darker" r="5" g="6" b="7" a="255"/>
-		<color id="x4uir_panel_dark" r="9" g="10" b="13" a="255"/>
-		<color id="x4uir_player_darker" r="26" g="67" b="41" a="255"/>
-		<color id="x4uir_text" r="238" g="236" b="228" a="255"/>
-		<color id="x4uir_signal" r="255" g="158" b="64" a="255"/>
-		<color id="x4uir_textmute_dark" r="82" g="87" b="92" a="255"/>
-		<color id="x4uir_textmute" r="150" g="158" b="168" a="255"/>
-		<color id="x4uir_chrome_darker_alpha_224" r="29" g="34" b="38" a="224"/>
-		<color id="x4uir_accent_dark_moderate_glow" r="31" g="104" b="136" a="255" glow="0.2"/>
-		<color id="x4uir_panel_alpha_224" r="16" g="19" b="23" a="224"/>
-		<color id="x4uir_accent_moderate_glow" r="56" g="189" b="248" a="255" glow="0.2"/>
-		<color id="x4uir_chrome_darker_alpha_64" r="29" g="34" b="38" a="64"/>
-		<color id="x4uir_chrome_darker_alpha_160" r="29" g="34" b="38" a="160"/>
-		<color id="x4uir_chrome_dark_alpha_244" r="54" g="62" b="70" a="244"/>
-		<color id="x4uir_textmute_moderate_glow" r="150" g="158" b="168" a="255" glow="0.2"/>
-		<color id="x4uir_chrome_dark_alpha_192" r="54" g="62" b="70" a="192"/>
-		<color id="x4uir_textmute_alpha_160_weak_glow" r="150" g="158" b="168" a="160" glow="0.05"/>
-		<color id="x4uir_textmute_alpha_160" r="150" g="158" b="168" a="160"/>
-		<color id="x4uir_panel_dark_alpha_160" r="9" g="10" b="13" a="160"/>
-		<color id="x4uir_chrome_darker_glow" r="29" g="34" b="38" a="255" glow="0.4"/>
-		<color id="x4uir_textmute_alpha_244" r="150" g="158" b="168" a="244"/>
-		<color id="x4uir_signal_moderate_glow" r="255" g="158" b="64" a="255" glow="0.2"/>
-		<color id="x4uir_panel_darker_alpha_192" r="5" g="6" b="7" a="192"/>
-		<color id="x4uir_scan_bright_weak_glow" r="255" g="127" b="200" a="255" glow="0.05"/>
-		<color id="x4uir_player_dark_moderate_glow" r="47" g="122" b="76" a="255" glow="0.2"/>
+		<color id="x4uir_player_weak_glow" r="94" g="214" b="132" a="255" glow="0.05"/>
+		<color id="x4uir_player_glow" r="94" g="214" b="132" a="255" glow="0.4"/>
+		<color id="x4uir_player_very_bright_weak_glow" r="183" g="237" b="200" a="255" glow="0.05"/>
+		<color id="x4uir_player_dark_glow" r="52" g="118" b="73" a="255" glow="0.4"/>
+		<color id="x4uir_player_bright_weak_glow" r="142" g="226" b="169" a="255" glow="0.05"/>
+		<color id="x4uir_player_dark_weak_glow" r="52" g="118" b="73" a="255" glow="0.05"/>
+		<color id="x4uir_panel_dark_alpha_160_weak_glow" r="6" g="8" b="9" a="160" glow="0.05"/>
+		<color id="x4uir_accent_bright_glow" r="107" g="223" b="214" a="255" glow="0.4"/>
+		<color id="x4uir_accent_dark_weak_glow" r="24" g="115" b="108" a="255" glow="0.05"/>
+		<color id="x4uir_accent_bright_weak_glow" r="107" g="223" b="214" a="255" glow="0.05"/>
+		<color id="x4uir_accent" r="43" g="209" b="197" a="255"/>
+		<color id="x4uir_hostile_bright" r="226" g="117" b="117" a="255"/>
+		<color id="x4uir_panel_darker_alpha_224" r="3" g="4" b="5" a="224"/>
+		<color id="x4uir_signal_bright_glow" r="233" g="194" b="120" a="255" glow="0.4"/>
+		<color id="x4uir_chrome_dark_weak_glow" r="48" g="56" b="59" a="255" glow="0.05"/>
+		<color id="x4uir_text_moderate_glow" r="222" g="228" b="230" a="255" glow="0.2"/>
+		<color id="x4uir_player_bright_glow" r="142" g="226" b="169" a="255" glow="0.4"/>
+		<color id="x4uir_accent_weak_glow" r="43" g="209" b="197" a="255" glow="0.05"/>
+		<color id="x4uir_accent_bright" r="107" g="223" b="214" a="255"/>
+		<color id="x4uir_accent_dark" r="24" g="115" b="108" a="255"/>
+		<color id="x4uir_hostile_weak_glow" r="214" g="58" b="58" a="255" glow="0.05"/>
+		<color id="x4uir_signal_dark_weak_glow" r="123" g="92" b="34" a="255" glow="0.05"/>
+		<color id="x4uir_signal_glow" r="224" g="168" b="62" a="255" glow="0.4"/>
+		<color id="x4uir_accent_glow" r="43" g="209" b="197" a="255" glow="0.4"/>
+		<color id="x4uir_mission_dark_glow" r="140" g="118" b="35" a="255" glow="0.4"/>
+		<color id="x4uir_panel_alpha_64" r="11" g="14" b="16" a="64"/>
+		<color id="x4uir_signal_bright" r="233" g="194" b="120" a="255"/>
+		<color id="x4uir_signal_weak_glow" r="224" g="168" b="62" a="255" glow="0.05"/>
+		<color id="x4uir_chrome_dark_alpha_160" r="48" g="56" b="59" a="160"/>
+		<color id="x4uir_signal_alpha_96_glow" r="224" g="168" b="62" a="96" glow="0.4"/>
+		<color id="x4uir_accent_very_bright_weak_glow" r="160" g="234" b="229" a="255" glow="0.05"/>
+		<color id="x4uir_signal_dark" r="123" g="92" b="34" a="255"/>
+		<color id="x4uir_mission_very_bright_weak_glow" r="255" g="237" b="169" a="255" glow="0.05"/>
+		<color id="x4uir_chrome_darker" r="26" g="30" b="32" a="255"/>
+		<color id="x4uir_chrome_dark" r="48" g="56" b="59" a="255"/>
+		<color id="x4uir_chrome" r="88" g="101" b="108" a="255"/>
+		<color id="x4uir_accent_dark_alpha_160" r="24" g="115" b="108" a="160"/>
+		<color id="x4uir_chrome_dark_alpha_64" r="48" g="56" b="59" a="64"/>
+		<color id="x4uir_panel_alpha_32" r="11" g="14" b="16" a="32"/>
+		<color id="x4uir_signal_darker" r="67" g="50" b="19" a="255"/>
+		<color id="x4uir_hostile_alpha_160_glow" r="214" g="58" b="58" a="160" glow="0.4"/>
+		<color id="x4uir_panel_alpha_64_weak_glow" r="11" g="14" b="16" a="64" glow="0.05"/>
+		<color id="x4uir_panel_darker_weak_glow" r="3" g="4" b="5" a="255" glow="0.05"/>
+		<color id="x4uir_mission_glow" r="255" g="214" b="64" a="255" glow="0.4"/>
+		<color id="x4uir_accent_very_bright_strong_glow" r="160" g="234" b="229" a="255" glow="0.6"/>
+		<color id="x4uir_accent_dark_alpha_160_glow" r="24" g="115" b="108" a="160" glow="0.4"/>
+		<color id="x4uir_signal_very_bright" r="241" g="216" b="168" a="255"/>
+		<color id="x4uir_hostile_dark_glow" r="118" g="32" b="32" a="255" glow="0.4"/>
+		<color id="x4uir_chrome_darker_alpha_244" r="26" g="30" b="32" a="244"/>
+		<color id="x4uir_signal_extra_bright_glow" r="247" g="233" b="207" a="255" glow="0.4"/>
+		<color id="x4uir_signal_dark_alpha_160" r="123" g="92" b="34" a="160"/>
+		<color id="x4uir_accent_very_bright_glow" r="160" g="234" b="229" a="255" glow="0.4"/>
+		<color id="x4uir_signal_very_bright_glow" r="241" g="216" b="168" a="255" glow="0.4"/>
+		<color id="x4uir_chrome_bright_glow" r="138" g="147" b="152" a="255" glow="0.4"/>
+		<color id="x4uir_chrome_very_bright_glow" r="180" g="186" b="189" a="255" glow="0.4"/>
+		<color id="x4uir_accent_dark_alpha_224" r="24" g="115" b="108" a="224"/>
+		<color id="x4uir_text_weak_glow" r="222" g="228" b="230" a="255" glow="0.05"/>
+		<color id="x4uir_panel_alpha_0" r="11" g="14" b="16" a="0"/>
+		<color id="x4uir_panel_darker_alpha_160" r="3" g="4" b="5" a="160"/>
+		<color id="x4uir_textmute_weak_glow" r="138" g="148" b="156" a="255" glow="0.05"/>
+		<color id="x4uir_mission" r="255" g="214" b="64" a="255"/>
+		<color id="x4uir_mission_dark" r="140" g="118" b="35" a="255"/>
+		<color id="x4uir_mission_bright" r="255" g="226" b="121" a="255"/>
+		<color id="x4uir_mission_extra_bright" r="255" g="245" b="207" a="255"/>
+		<color id="x4uir_mission_very_bright" r="255" g="237" b="169" a="255"/>
+		<color id="x4uir_panel_darker_alpha_64" r="3" g="4" b="5" a="64"/>
+		<color id="x4uir_player_alpha_160" r="94" g="214" b="132" a="160"/>
+		<color id="x4uir_hostile_alpha_160" r="214" g="58" b="58" a="160"/>
+		<color id="x4uir_accent_very_bright" r="160" g="234" b="229" a="255"/>
+		<color id="x4uir_scan_bright_glow" r="214" g="141" b="233" a="255" glow="0.4"/>
+		<color id="x4uir_chrome_dark_glow" r="48" g="56" b="59" a="255" glow="0.4"/>
+		<color id="x4uir_hostile_glow" r="214" g="58" b="58" a="255" glow="0.4"/>
+		<color id="x4uir_hostile_very_bright_glow" r="237" g="166" b="166" a="255" glow="0.4"/>
+		<color id="x4uir_hostile_bright_glow" r="226" g="117" b="117" a="255" glow="0.4"/>
+		<color id="x4uir_panel_darker" r="3" g="4" b="5" a="255"/>
+		<color id="x4uir_panel_dark" r="6" g="8" b="9" a="255"/>
+		<color id="x4uir_player_darker" r="28" g="64" b="40" a="255"/>
+		<color id="x4uir_text" r="222" g="228" b="230" a="255"/>
+		<color id="x4uir_signal" r="224" g="168" b="62" a="255"/>
+		<color id="x4uir_textmute_dark" r="76" g="81" b="86" a="255"/>
+		<color id="x4uir_textmute" r="138" g="148" b="156" a="255"/>
+		<color id="x4uir_chrome_darker_alpha_224" r="26" g="30" b="32" a="224"/>
+		<color id="x4uir_accent_dark_moderate_glow" r="24" g="115" b="108" a="255" glow="0.2"/>
+		<color id="x4uir_panel_alpha_224" r="11" g="14" b="16" a="224"/>
+		<color id="x4uir_accent_moderate_glow" r="43" g="209" b="197" a="255" glow="0.2"/>
+		<color id="x4uir_chrome_darker_alpha_64" r="26" g="30" b="32" a="64"/>
+		<color id="x4uir_chrome_darker_alpha_160" r="26" g="30" b="32" a="160"/>
+		<color id="x4uir_chrome_dark_alpha_244" r="48" g="56" b="59" a="244"/>
+		<color id="x4uir_textmute_moderate_glow" r="138" g="148" b="156" a="255" glow="0.2"/>
+		<color id="x4uir_chrome_dark_alpha_192" r="48" g="56" b="59" a="192"/>
+		<color id="x4uir_textmute_alpha_160_weak_glow" r="138" g="148" b="156" a="160" glow="0.05"/>
+		<color id="x4uir_textmute_alpha_160" r="138" g="148" b="156" a="160"/>
+		<color id="x4uir_panel_dark_alpha_160" r="6" g="8" b="9" a="160"/>
+		<color id="x4uir_chrome_darker_glow" r="26" g="30" b="32" a="255" glow="0.4"/>
+		<color id="x4uir_textmute_alpha_244" r="138" g="148" b="156" a="244"/>
+		<color id="x4uir_signal_moderate_glow" r="224" g="168" b="62" a="255" glow="0.2"/>
+		<color id="x4uir_panel_darker_alpha_192" r="3" g="4" b="5" a="192"/>
+		<color id="x4uir_scan_bright_weak_glow" r="214" g="141" b="233" a="255" glow="0.05"/>
+		<color id="x4uir_player_dark_moderate_glow" r="52" g="118" b="73" a="255" glow="0.2"/>
 	</add>
 </diff>

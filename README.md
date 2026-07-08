@@ -1,26 +1,29 @@
 # X4 UI Rework — Meridian Theme
 
-A clean, modern recolour and readability overhaul for X4: Foundations' menus and HUD.
+A clean, modern recolour and readability overhaul for X4: Foundations' menus and HUD,
+styled after EVE Online's tactical-HUD look.
 
 ## What this is
 
 X4's default interface leans heavily on a single low-contrast blue ("azure") for almost
 every panel, button, border and HUD element. **Meridian** replaces it with a cohesive,
-higher-contrast palette:
+higher-contrast palette inspired by EVE Online's UI: near-black neutral panels, a teal-cyan
+interactive accent, and gold/amber highlights, instead of X4's flatter blue-on-black look.
 
-- **Graphite panels** — background chrome (windows, containers, dropdowns, tables) uses a
-  neutral dark graphite instead of flat black/navy, so panels read as distinct layers
-  instead of a blue-on-black smear.
-- **Signal-cyan accent** — buttons, borders, sliders, the crosshair, shields and neutral
-  contacts share one crisp, high-contrast cyan so interactive elements are easy to find at
-  a glance.
-- **Warm amber secondary** — hull bars, active orders, boost/heat indicators, loading
-  screens and production flowcharts get a warm amber that's easy to tell apart from the
-  cyan accent and from faction relation colours.
+- **Near-black slate panels** — background chrome (windows, containers, dropdowns, tables)
+  uses a neutral, almost-black slate instead of flat navy/black, so panels read as distinct
+  layers instead of a blue-on-black smear — the same restrained, low-glare panel language
+  EVE's UI uses.
+- **Teal-cyan accent** — buttons, borders, sliders, the crosshair, shields and neutral
+  contacts share one crisp EVE-style teal-cyan so interactive elements are easy to find at
+  a glance, instead of X4's muddier sky-blue.
+- **Gold/amber secondary** — hull bars, active orders, boost/heat indicators, loading
+  screens and production flowcharts get an EVE-style gold/amber (think "ISK gold") that's
+  easy to tell apart from the teal accent and from faction relation colours.
 - **Preserved relation colours** — player/friendly stays green, hostile stays red, missions
-  stay gold/amber, scan-mode stays magenta. Only the *shade and contrast* of these changed,
-  not their meaning, so your existing muscle memory for "green = mine, red = danger" still
-  works.
+  stay gold/yellow, scan-mode stays a violet-magenta alarm colour. Only the *shade and
+  contrast* of these changed, not their meaning, so your existing muscle memory for
+  "green = mine, red = danger" still works.
 
 It touches **every major surface** the game exposes through its colour-mapping system:
 menus and panels, buttons/dropdowns/editboxes/checkboxes/sliders/scrollbars, tables and

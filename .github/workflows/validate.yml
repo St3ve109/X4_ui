@@ -1,0 +1,28 @@
+name: Validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check XML well-formedness (xmllint)
+        run: |
+          sudo apt-get update -y && sudo apt-get install -y libxml2-utils
+          xmllint --noout content.xml
+          xmllint --noout libraries/colors.xml
+
+      - name: Structural validation
+        run: python3 tools/validate.py
+
+      - name: Palette regeneration is up to date
+        run: |
+          python3 tools/build_colors.py
+          git diff --exit-code -- libraries/colors.xml || {
+            echo "::error::libraries/colors.xml is out of date with tools/build_colors.py. Run 'python3 tools/build_colors.py' and commit the result.";
+            exit 1;
+          }
