@@ -469,7 +469,7 @@
 		<mapping id="holomap_infobox_picked" ref="x4uir_accent_weak_glow"/>
 	</replace>
 	<replace sel="/colormap/mappings/mapping[@id='holomap_infobox_selected']">
-		<mapping id="holomap_infobox_selected" ref="x4uir_accent_dark_weak_glow"/>
+		<mapping id="holomap_infobox_selected" ref="x4uir_accent_bright_glow"/>
 	</replace>
 	<replace sel="/colormap/mappings/mapping[@id='holomap_intersector_defence_line']">
 		<mapping id="holomap_intersector_defence_line" ref="x4uir_panel_alpha_64_weak_glow"/>
@@ -565,7 +565,7 @@
 		<mapping id="icon_normal" ref="x4uir_text_weak_glow"/>
 	</replace>
 	<replace sel="/colormap/mappings/mapping[@id='icon_warning_inactive']">
-		<mapping id="icon_warning_inactive" ref="x4uir_hostile_bright_glow"/>
+		<mapping id="icon_warning_inactive" ref="x4uir_hostile_dark_weak_glow"/>
 	</replace>
 	<replace sel="/colormap/mappings/mapping[@id='input_reference']">
 		<mapping id="input_reference" ref="x4uir_accent_bright_weak_glow"/>
@@ -1039,6 +1039,7 @@
 		<color id="x4uir_signal" r="224" g="168" b="62" a="255"/>
 		<color id="x4uir_textmute_dark" r="76" g="81" b="86" a="255"/>
 		<color id="x4uir_textmute" r="138" g="148" b="156" a="255"/>
+		<color id="x4uir_hostile_dark_weak_glow" r="118" g="32" b="32" a="255" glow="0.05"/>
 		<color id="x4uir_chrome_darker_alpha_224" r="26" g="30" b="32" a="224"/>
 		<color id="x4uir_accent_dark_moderate_glow" r="24" g="115" b="108" a="255" glow="0.2"/>
 		<color id="x4uir_panel_alpha_224" r="11" g="14" b="16" a="224"/>
